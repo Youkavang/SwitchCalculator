@@ -1,0 +1,24 @@
+.power-button{
+  /* background-image: url(./images/powerbutton.png); */
+  background-size: cover;
+  background: #2E2E33;
+  max-width: 20px;
+  max-height: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 2px #222129;
+  margin-top: 20px;
+  margin-left:35px;
+}
+
+.image{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 395px;
+    right: 330px;
+}
+
+.music-bar1-7{
+    display: flex;
+    flex-direction: column;
+}

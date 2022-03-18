@@ -1,0 +1,369 @@
+:root {
+  --primary: #d81e5b;
+  --secondary: #8c38ff;
+  --dark: #131a26;
+  --light: #eee;
+  --calcblue: #5D86A1;
+  --calcbackground: #EAEAEA;
+} 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body{
+
+}
+
+.background{
+  background-image: url(./images/ff7logo.png);
+  background-size: contain;
+}
+
+.App{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch-container{
+  display: flex;
+  float: left;
+  width: 800px;
+}
+
+.switch-left{
+  background: #0292AE;
+  height: 365px;
+  width: 125px;
+  border-radius: 70px 0px 0px 70px;
+  box-shadow: 0px 0px 0px 2px rgba(0,0,0,.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.minus-sign{
+  background: #424245;
+  height: 5px;
+  width: 22px;
+  margin-top: 20px;
+  margin-left: 96px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px #313236
+}
+
+.analog-stick-left{
+  background: #3E4144;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  margin-top: 33px;
+  margin-left: 37.5px;
+  box-shadow: 0 0 0 3px #313236
+}
+
+.direction-controls{
+  /* background: rgba(0,0,0,.2); */
+  height: 90px;
+  width: 90px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+.top-direction{
+  background: #3D4841;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #313236;
+  margin-left: 32.5px;
+  display: flex;
+  justify-content: center;
+  text-align:center
+}
+
+.arrow-up{
+  margin-top: 5px;
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 12px solid #1A1C1F
+}
+
+.middle-buttons{
+  margin-top: 10px;
+  display: flex;
+  min-width: 150px
+}
+
+.left-direction{
+  background: #3D4841;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #313236;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-left{
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent; 
+  border-right:12px solid #1A1C1F;
+  margin-top: 5px;
+  margin-left: -3px;
+}
+
+.right-direction{
+  background: #3D4841;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #313236;
+  margin-left: 39.5px;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-right{
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent; 
+  margin-top: 5px;
+  margin-left: 3px;
+  
+  border-left:12px solid #1A1C1F;
+}
+
+.bottom-direction{
+  background: #3D4841;
+  height: 25px;
+  width: 25px;
+  margin-top: 4.5px;
+  margin-left: 32.5px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #313236;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-down{  
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent; 
+  margin-top: 7px;
+  border-top:12px solid #1A1C1F;
+}
+
+.small-button{
+  background: #2E2E33;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 0 2px #222129;
+  margin-top: 20px;
+  margin-left: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.small-button-circle{
+  background: #313236;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px #1B1C1F;
+  margin-top: 3px;
+}
+
+.switch-right{
+  background: #F73A2E;
+  height: 365px;
+  width: 125px;
+  border-radius: 0px 70px 70px 0px;
+  box-shadow: 0 0 0 3px #313236;
+  display: flex;
+  flex-direction: column;
+}
+
+.plus-sign{
+  background: #424245;
+  height: 5px;
+  width: 22px;
+  margin-top: 20px;
+  margin-left: 6px;
+  box-shadow: 0 0 0 2px #313236
+}
+
+.plus-sign-vertical{
+  background: #424245;
+  height: 22px;
+  width: 5px;  
+  box-shadow: 0 0 0 2px #313236;
+  position: absolute;
+  right: 388.5px;
+  top: 158px
+}
+
+.letter-controls{
+  /* background: rgba(0,0,0,.2); */
+  height: 90px;
+  width: 90px;
+  text-align: center;
+  margin-top: 33px;
+  margin-left: 15px;
+}
+
+.x-button{
+  background: #3D4841;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #313236;
+  margin-left: 32.5px;
+  display: flex;
+  justify-content: center;
+  text-align:center
+}
+
+.center-buttons{
+  margin-top: 10px;
+  display: flex;
+  min-width: 150px
+}
+
+.y-button{
+  background: #3D4841;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #313236;
+  display: flex;
+  justify-content: center;
+}
+
+.a-button{
+  background: #3D4841;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #313236;
+  margin-left: 39.5px;
+  display: flex;
+  justify-content: center;
+}
+
+.b-button{
+  background: #3D4841;
+  height: 25px;
+  width: 25px;
+  margin-top: 4.5px;
+  margin-left: 32.5px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #313236;
+  display: flex;
+  justify-content: center;
+}
+
+.letters{
+  margin-top: 4px;
+}
+
+.analog-stick-right{
+  background: #3E4144;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-left: 37.5px;
+  box-shadow: 0 0 0 3px #313236
+}
+
+.calculator{
+  width: 550px;
+  border: 1px black solid;
+  background-image: url(./images/cal\ wallpaper.jpg);
+  background-size: cover;
+  /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+  /* background-image: url(./images/cal\ wallpaper.jpg);
+  background-size: cover; */
+  /* width: 100%;
+  max-width: 400px;
+  height: 540px;
+  max-width: 340px; 
+  /* background-color: #fff; 
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0,0,0,0.2); */
+}
+
+.switch-background{
+  
+}
+
+ .display{
+  padding: 16px;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  background: rgba(0,0,0,0.75);
+  border: gray solid 1px;
+  height: 70px;
+}
+
+.display span{
+  font-size: 14px;
+  color: white;
+}
+
+button{
+  appearance: none;
+  outline: none; 
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+  height: 70;
+}
+
+.operators{
+  display: flex;
+  float: right;
+  flex-direction: column;
+  width: 25%;
+}
+
+.operators button{
+  background: rgba(0,0,0,.75);
+  color: white;
+  flex: 1 1 25%;
+  font-weight: 700;
+
+}
+
+.digits{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button{
+  background: rgba(0,0,0,0.75 );
+  color: white;
+  flex: 1 1 33.33%;
+  justify-content: space-evenly;
+} 
+
+.hidden{
+  display: none;
+
+}
